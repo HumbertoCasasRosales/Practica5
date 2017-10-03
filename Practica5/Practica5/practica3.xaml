@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica5.practica3">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+                <RowDefinition Height="Auto" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Text="Datos Personales" Grid.Row="0" FontSize="Medium" ></Label>
+            <Entry x:Name="nom" Placeholder="Nombre" Grid.Row="1"></Entry>
+            <Entry x:Name="apellidos" Placeholder= "Apellidos" Grid.Row="2"></Entry>
+            <Entry x:Name="direcion" Placeholder="Direccion" Grid.Row="3"></Entry>
+            <Entry x:Name="telefono" Placeholder="Telefono" Keyboard="Telephone" Grid.Row="4"></Entry>
+            <Label Text="Datos Escolares" Grid.Row="5" FontSize="Medium"></Label>
+            <Entry x:Name="carrera" Placeholder="Carrera" Grid.Row="6"></Entry>
+            <Entry x:Name="semestre" Placeholder="Semestre" Grid.Row="7"></Entry>
+            <Entry x:Name="matricula" Placeholder="Matricula" Keyboard="Numeric" Grid.Row="8"></Entry>
+            <Label Text="Datos Sociales" Grid.Row="9" FontSize="Medium" ></Label>
+            <Entry x:Name="correo" Placeholder="email" Grid.Row="10" Keyboard="Email"></Entry>
+            <Entry x:Name="git" Placeholder="gitHub" Grid.Row="11" Keyboard="Url"></Entry>
+            <Button x:Name="mostrarDatos" Grid.Row="13" Text="MOSTRAR DATOS" Clicked="mostrarDatos_Clicked"></Button>
+            <Button x:Name="siguiente" Grid.Row="14" Text="SIGUIENTE" Clicked="siguiente_Clicked"></Button>
+            <Label x:Name="Datos" Text="" Grid.Row="12"></Label>
+        </Grid>
+    </ScrollView>
+</ContentPage>

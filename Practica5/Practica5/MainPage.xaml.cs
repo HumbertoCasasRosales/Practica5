@@ -13,5 +13,10 @@ namespace Practica5
         {
             InitializeComponent();
         }
+
+        private void siguiente_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Practica5.practica3());
+        }
     }
 }

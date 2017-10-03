@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica5.Calculadora"
+             BackgroundColor="LightPink">
+    <ContentPage.Content>
+        <Grid x:Name="controlGrid" RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="resul_" Text="" Grid.Row="0" HorizontalTextAlignment="End" VerticalTextAlignment="End" TextColor="White"
+        FontSize="60" Grid.ColumnSpan="4" />
+            <Button  x:Name="Borrar" Text = "C" Grid.Row="1" Grid.Column="0" Clicked="OnButton_clean"/>
+            <Button x:Name="masmenos" Text = "+/-" Grid.Row="1" Grid.Column="2" Clicked="masmenos_Clicked"/>
+            <Button x:Name="division" Text = "÷" Grid.Row="1" Grid.Column="3" Clicked="OnButton_one"/>
+            <Button ContentLayout="7" x:Name="siete" Text = "7" Grid.Row="2" Grid.Column="0" Clicked="OnButton_one"/>
+            <Button x:Name="ocho" Text = "8" Grid.Row="2" Grid.Column="1" Clicked="OnButton_one"/>
+            <Button x:Name="nueve" Text = "9" Grid.Row="2" Grid.Column="2" Clicked="OnButton_one"/>
+            <Button x:Name="multi" Text = "X" Grid.Row="2" Grid.Column="3" Clicked="OnButton_one"/>
+            <Button x:Name="cuatro" Text = "4" Grid.Row="3" Grid.Column="0" Clicked="OnButton_one"/>
+            <Button x:Name="cinco" Text = "5" Grid.Row="3" Grid.Column="1" Clicked="OnButton_one"/>
+            <Button x:Name="seis" Text = "6" Grid.Row="3" Grid.Column="2" Clicked="OnButton_one"/>
+            <Button x:Name="menos" Text = "-" Grid.Row="3" Grid.Column="3" Clicked="OnButton_one"/>
+            <Button x:Name="uno" Text = "1" Grid.Row="4" Grid.Column="0" Clicked="OnButton_one"/>
+            <Button x:Name="dos" Text = "2" Grid.Row="4" Grid.Column="1" Clicked="OnButton_one"/>
+            <Button x:Name="tres" Text = "3" Grid.Row="4" Grid.Column="2" Clicked="OnButton_one"/>
+            <Button x:Name="mas" Text = "+" Grid.Row="4" Grid.Column="3" Clicked="OnButton_one"/>
+            <Button x:Name="del" Text = "←" Grid.Row="1" Grid.Column="1" Clicked="del_Clicked"/>
+            <Button x:Name="cero" Text = "0" Grid.Row="5" Grid.Column="1" Clicked="OnButton_one"/>
+            <Button x:Name="punto" Text = "." Grid.Row="5" Grid.Column="2" Clicked="OnButton_one"/>
+            <Button x:Name="igual" Text = "=" Grid.Row="5" Grid.Column="3" Clicked="OnButton_equal"/>
+            <Button x:Name="principal" Text="Regresar a la pagina Principal" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" Clicked="principal_Clicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

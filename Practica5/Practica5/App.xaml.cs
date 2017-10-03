@@ -13,7 +13,7 @@ namespace Practica5
         {
             InitializeComponent();
 
-            MainPage = new Practica5.MainPage();
+            MainPage = new NavigationPage (new Practica5.MainPage());
         }
 
         protected override void OnStart()
